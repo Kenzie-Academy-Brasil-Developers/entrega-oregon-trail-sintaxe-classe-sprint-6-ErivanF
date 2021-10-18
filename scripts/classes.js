@@ -4,6 +4,9 @@ class Traveler {
         this._food = 1
         this._isHealthy = true
     }
+    set name (name) {
+        this._name = name
+    }
     get name() {
          return this._name 
     }
