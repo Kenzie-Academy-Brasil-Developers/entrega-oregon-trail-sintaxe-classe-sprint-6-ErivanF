@@ -7,6 +7,9 @@ class Traveler {
     set name (name) {
         this._name = name
     }
+    set food (food) {
+        this._food = food
+    }
     get name() {
          return this._name 
     }
@@ -52,6 +55,9 @@ class Wagon{
         let foodCount = 0
         this._passageiros.forEach((person)=>{foodCount+=person.food })
         return foodCount
+    }
+    set capacity(capacity){
+        this._capacity = capacity
     }
     get capacity() {
         return this._capacity
